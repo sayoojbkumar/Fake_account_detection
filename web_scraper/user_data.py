@@ -1,6 +1,8 @@
 import requests
 import os
 import csv
+from random import randint
+from time import sleep
 
 def get_user_data(session,username):
     if username:
@@ -33,7 +35,6 @@ def get_folowing(user_id,session):
 
 user_id=5989317029#need_to_change
 session='sessionid='+input('input session ')#check ur cookie to get sessionid value
-
 user_data=get_folowing(user_id,session)
 header = ['username', 'full_name', 'is_verified', 'has_anonymous_profile_picture']
 with open('users.csv', 'w', encoding='UTF16', newline='') as f:
@@ -55,6 +56,7 @@ with open('users_data.csv', 'w', encoding='UTF16', newline='') as g:
 with open('users.csv',encoding='utf-16') as f:
     user_dict=csv.DictReader(f)
     for row in user_dict:
+        sleep(randint(1,5))
         single_data,user_name = get_user_data(session,row["username"])
         with open('users_data.csv', 'a', encoding='UTF16', newline='') as g:
             writer = csv.writer(g)
