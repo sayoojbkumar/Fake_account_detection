@@ -33,7 +33,7 @@ def get_folowing(user_id,session):
             print("getting user failed")
     return user_info
 
-user_id=5989317029#need_to_change
+user_id=4023657698#need_to_change
 session='sessionid='+input('input session ')#check ur cookie to get sessionid value
 user_data=get_folowing(user_id,session)
 header = ['username', 'full_name', 'is_verified', 'has_anonymous_profile_picture']
