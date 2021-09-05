@@ -2,4 +2,4 @@
 
 ## merger.py
 
-### merges users.csv and users_data.csv
+merges `users.csv` and `users_data.csv`
