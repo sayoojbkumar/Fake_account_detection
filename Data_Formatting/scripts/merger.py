@@ -1,4 +1,4 @@
-input_files = ['users.csv', 'users_data.csv']
+input_files = ['users_f.csv', 'users_data_f.csv']
 output_file = 'output.csv'
 
 output = None
