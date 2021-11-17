@@ -1,0 +1,126 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:100);
+*{
+    margin:0;
+    box-sizing: border-box;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #111;
+  }
+center{
+    color: #fff;
+}
+body{
+    background: #101010;
+}
+.search-box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 60px;
+    background: #353535;
+    line-height:40px;
+    padding: 10px;
+    border-radius: 60px;
+}
+.search-input{
+    background: #353535;
+    color: #fff;
+    outline: none;
+    border: none;
+    line-height:40px;
+    width: 2px;
+    float: left;
+    font-size:14px;
+    transition: 0.7s ease;
+    font-family:sans-serif;
+}
+.search-btn{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration:none;
+    background: #353535;
+    padding: 12px;
+    border-radius: 50%;
+    float: right;
+    color: #ff5722;
+    transition: 0.4s ease;
+}
+.search-box:hover > .search-input{
+    width: 240px;
+    margin: 0px 8px;
+}
+.search-input:focus{
+    width: 240px;
+    margin: 0px 8px;
+}
+.search-box:hover > .search-btn{
+    background: #fff;
+}
+.search-input:focus + .search-btn{
+    background: #fff;
+}
+
+
+footer{
+  position:fixed;
+  bottom:0;
+  width:100%;
+  background:#151515;
+  height:35px;
+  text-align:center;
+  line-height:35px;
+}
+footer a{
+  text-decoration:none;
+  color:#ff5722;
+  font-family:sans-serif;
+  text-transform:uppercase;
+  font-size:12px;
+  transition:0.4s;
+}
+footer a:hover{
+  color:#ff6b3b;
+}
+#loading {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border: 3px solid rgba(255,255,255,.3);
+    border-radius: 50%;
+    border-top-color: #fff;
+    animation: spin 1s ease-in-out infinite;
+    -webkit-animation: spin 1s ease-in-out infinite;
+  }
+  
+  @keyframes spin {
+    to { -webkit-transform: rotate(360deg); }
+  }
+  @-webkit-keyframes spin {
+    to { -webkit-transform: rotate(360deg); }
+  }
+p,h1,ol{
+    color: #fff;
+    width:700px;height:100px;
+}
