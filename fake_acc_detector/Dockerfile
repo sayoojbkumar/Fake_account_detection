@@ -1,4 +1,4 @@
-FROM python:3.8-slim-buster
+FROM python3.7-devel
 
 ADD . /app
 
