@@ -1,4 +1,4 @@
-FROM python3.7-devel
+FROM python:3.9
 
 ADD . /app
 
