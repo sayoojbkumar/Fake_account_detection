@@ -143,4 +143,4 @@ def collector():
                 return "Looks Like Genuine Account"
 
 if __name__ == '__main__':
-    app.run()
+    app.run(host='0.0.0.0',port=1337)
